@@ -4,37 +4,70 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
     <title>Barbie</title>
 </head>
 <body>
 
     <nav class="navbar">
         <div class="container">
-            <a href="#" class="logo"><img src="./images/logo.png" alt="Logo PLAYCUBE"></a>
+            <a href="#" class="logo"><img src="./components/images/logo.png" alt="Logo PLAYCUBE"></a>
             <ul class="nav-links">
                 <li><a href="#">Filmes</a></li>
                 <li><a href="#">Séries</a></li>
             </ul>
+            <div class="hamburger">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
         </div>
+        <ul class="mobile-nav-links">
+            <li><a href="#">Filmes</a></li>
+            <li><a href="#">Séries</a></li>
+        </ul>
     </nav>
 
     <section id="section1" class="content-section">
-        <div class="container">
-            <h2>Informações</h2>
-            <p>Lorem ipsum dolor sit amet</p>
+        <div class="container section-content">
+            <img src="./components/images/capa.png" alt="Capa" class="capa-image">
+            <div class="text-content">
+                <h2><span class="title-bold">Barbie</span> <span class="title-normal">(2023)</span></h2>
+                <p><span class="title-bold">Gênero:</span><br>Comédia, Aventura, Fantasia</p>
+                <p><span class="title-bold">Sinopse:</span><br>No mundo mágico das Barbies, "Barbieland", uma das bonecas começa a perceber que não se encaixa como as outras. Depois de ser expulsa, ela parte para uma aventura no "mundo real", onde descobre que a beleza está no interior de cada um.</p>
+                <div class="info-columns">
+                    <div class="info-column">
+                        <p><span class="title-bold">Dirigido por:</span><br>Greta Gerwig</p>
+                        <p><span class="title-bold">Orçamento:</span><br>$145,000,000.00</p>
+                        <p><span class="title-bold">Idioma original:</span><br>Inglês</p>
+                    </div>
+                    <div class="info-column">
+                        <p><span class="title-bold">Situação:</span><br>Lançado</p>
+                        <p><span class="title-bold">Escrito por:</span><br>Greta Gerwig, Noah Baumbach</p>
+                        <p><span class="title-bold">Receita:</span><br>$1,280,313,193.00</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
     <section id="section2" class="content-section">
         <div class="container">
             <h2>Elenco</h2>
-            <div class="cast-photos">
-                <img src="1.png" alt="Ator 1">
-                <img src="2.png" alt="Ator 2">
-                <img src="3.png" alt="Ator 3">
-                <img src="4.png" alt="Ator 4">
-                <img src="5.png" alt="Ator 5">
-                <img src="6.png" alt="Ator 6">
+            <div class="cast-slider">
+                <div class="slides">
+                    <img src="./components/images/1.png" alt="Ator 1">
+                    <img src="./components/images/2.png" alt="Ator 2">
+                    <img src="./components/images/3.png" alt="Ator 3">
+                    <img src="./components/images/4.png" alt="Ator 4">
+                    <img src="./components/images/5.png" alt="Ator 5">
+                    <img src="./components/images/6.png" alt="Ator 6">
+                    <img src="./components/images/7.png" alt="Ator 7">
+                    <img src="./components/images/8.png" alt="Ator 8">
+                    <img src="./components/images/9.png" alt="Ator 9">
+                </div>
+                <button class="prev">❮</button>
+                <button class="next">❯</button>
             </div>
         </div>
     </section>
@@ -48,7 +81,7 @@
 
     <footer class="footer">
         <div class="container">
-            <div class="footer-logo"><img src="./images/logo.png" alt="Logo PLAYCUBE"></div>
+            <div class="footer-logo"><img src="./components/images/logo.png" alt="Logo PLAYCUBE"></div>
             <div class="footer-columns">
                 <div class="footer-column">
                     <ul>
